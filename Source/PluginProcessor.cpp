@@ -268,6 +268,7 @@ void SimpleEQAudioProcessor::updateFilters()
 
 juce::AudioProcessorValueTreeState::ParameterLayout SimpleEQAudioProcessor::createParameterLayout()
 {
+//    TODO: create a map for these parameters
     juce:: AudioProcessorValueTreeState::ParameterLayout layout;
     
     layout.add(std::make_unique<juce::AudioParameterFloat>(juce::ParameterID("LoCut_Freq", 1),
